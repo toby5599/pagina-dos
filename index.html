@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#EC6A6A">
+	<script src="https://kit.fontawesome.com/da4f86ae20.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+	crossorigin=""/>
+	<title>Restaurante típico - Cocina de autor</title>
+</head>
+
+<body>
+
+	<header class="header" id="home">
+		<div class="contenedor__navbar">
+			<nav class="navbar">
+				<ul class="navbar__elementos-seccion--izquierda">
+					<li><a href="#home">INICIO</a></li>
+					<li><a href="menu/menu.pdf" target="_blank">MENU</a></li>
+					<li><a href="#about">SOBRE</a></li>
+				</ul>
+				<div class="navbar__logo"></div>
+				<ul class="navbar__elementos-seccion--derecha">
+					<li><a href="#galeria">GALERÍA</a></li>
+					<li><a href="#ubicacion">UBICACIÓN</a></li>
+					<li><a href="#contacto">CONTACTO</a></li>
+					<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				</ul>
+			</nav>
+			<div class="navbar__menu">
+				<div class="navbar__menu__bar"></div>
+			</div>
+		</div>
+	</header>
+	<header>
+        <nav class="navbar__activado">
+            <ul class="navbar__elementos__activados">
+                <li><a href="#home" class="inicio">INICIO</a></li>
+				<li><a href="menu/menu.pdf" target="_blank">MENU</a></li>
+                <li><a href="#about">SOBRE</a></li>
+                <li><a href="#galeria">GALERÍA</a></li>
+				<li><a href="#ubicacion">UBICACION</a></li>
+				<li><a href="#contacto">CONTACTO</a></li>
+			</ul>
+        </nav>
+    </header>
+
+	<main class="seccion-portada">
+		<div class="portada__comida">
+			<h2>Cocina de autor</h2>
+			<p>Donde la calidad, el servicio y el ambiente se unen para ofrecerte una experiencia inolvidable.</p>
+			<a href="menu/menu.pdf" target="_blank" class="boton-reservas">NUESTRA CARTA</a>
+		</div>
+	</main>
+
+	<section class="seccion-historia" id="about">
+		<h2 class="historia--titulo">HISTORIA</h2>
+		<div class="historia__contenedor">
+			<div class="historia--parrafo--left parrafos">
+				<p class="parrafo--left">
+					Un toque personal en cada plato: la cocina de autor que fusiona la tradición y la creatividad del chef para crear experiencias culinarias únicas. Cada platillo es una obra de arte que refleja la personalidad del chef y su habilidad para combinar ingredientes frescos y de alta calidad con técnicas culinarias innovadoras.<br>
+					<br>
+					Nuestro restaurante es el resultado del amor por la buena comida, la tradición y la innovación. Desde nuestros inicios, nos hemos dedicado a ofrecer una experiencia culinaria única que combina la tradición de la cocina local con la innovación y la creatividad de nuestro equipo de chefs.<br>
+					<br>
+					Nuestro menú cuenta con una amplia variedad de platos que reflejan la riqueza culinaria de la región. Desde pescados y mariscos frescos, hasta carnes y aves de corral de alta calidad, todos nuestros ingredientes son seleccionados cuidadosamente para asegurarnos de ofrecer platillos sabrosos y saludables.<br>
+					<br>
+					Nos enorgullecemos de ofrecer opciones para todos los gustos y preferencias dietéticas. Además de platos vegetarianos y veganos, también contamos con opciones sin gluten y para aquellos que buscan una alimentación más saludable. </p>
+			</div>
+			<div class="historia--parrafo--right parrafos">
+				<p class="parrafo--right">
+					Pero no solo nos enfocamos en la calidad de nuestra comida, también en la experiencia que queremos transmitir a nuestros clientes. Desde el ambiente relajado y acogedor de nuestro comedor, hasta el servicio amable y atento de nuestro personal, todo en nuestro restaurante está diseñado para ofrecer una experiencia culinaria inolvidable.<br>
+					<br>
+					Para aquellos que buscan algo especial, contamos con una selección de platos especiales de la casa que han sido creados por nuestros chefs para ofrecer una experiencia culinaria única y memorable. Estos platillos cambian constantemente para aprovechar los ingredientes frescos de la temporada y destacan por su sabor, presentación y creatividad.<br>
+					<br>
+					Pero nuestro compromiso con la calidad y la excelencia no se detiene en la cocina. También nos preocupamos por el medio ambiente y trabajamos para reducir nuestro impacto en el planeta. Es por eso que utilizamos ingredientes locales y de temporada siempre que sea posible y nos esforzamos por reducir nuestro desperdicio de alimentos y energía. 
+					<br><br>
+					En resumen, nuestro restaurante es el lugar perfecto para disfrutar de una experiencia culinaria única y memorable que combina la tradición con la innovación, la calidad con la sostenibilidad y la amabilidad con la excelencia. Nos encantaría tener la oportunidad de darle la bienvenida a nuestro restaurante y ofrecerle una experiencia culinaria que nunca olvidará."
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion-galeria" id="galeria">
+		<h2 class="galeria--titulo">GALERIA</h2>
+
+		<div class="slider">
+			<div class="slider-container">
+				<div class="slider-item active item1"></div>
+			  	<div class="slider-item item2"></div>
+			  	<div class="slider-item item3"></div>
+			  	<div class="slider-item item4"></div>
+			</div>
+			<div class="slider-controls">
+			  <button class="slider-control slider-control-prev">❮</button>
+			  <button class="slider-control slider-control-next">❯</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion-direccion" id="ubicacion">
+		<h3 class="direccion--titulo">UBICACIÓN</h3>
+		<div class="contenedor__mapa-horarios">
+			<div id="map"></div>
+			<div class="informacion">
+				<address class="ubicacion">
+					<h3>PALERMO</h3>
+					<br>
+					<P>DIRECCIÓN 4575</P>
+					<p>CABA</p>
+					<p>Argentina</p>
+				</address>
+				<div class="horarios">
+					<div class="horarios__contenedor">
+						<div class="lunes-a-viernes horario">
+							<p><strong>Lunes a Viernes</strong></p>
+							<p>de 12:00 a 1:00</p>
+						</div>
+						<div class="sabados horario">
+							<p><strong>Sábado</strong></p>
+							<p>de 12:00 a 2:00</p>
+						</div>
+						<div class="domingo horario">
+							<p><strong>Domingo</strong></p>
+							<p>de 12:00 a 1:00</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section class="seccion-contacto" id="contacto">
+		<h2 class="contacto--titulo">¡CONTACTANOS!</h2>
+		<div class="contenedor__form">
+			<form action="correo.php" method="post" class="contenedor__form">
+            
+				<div class="contenedor__form__items">
+					<div class="form--nombre form">
+						<input type="text" name="nombre" placeholder="Tu nombre">
+					</div>
+					<div class="form--mail form">
+						<input type="text" name="email" placeholder="Tu mail">
+					</div>           
+					<div class="form--numero form">
+						<input type="number" name="numero" placeholder="Tu número">
+					</div>
+					<textarea name="mensaje" placeholder="Mensaje" class="form--mensaje"></textarea>
+				</div>
+	
+				<div class="form--boton">
+					<input type="button" name="Enviar" class="boton" value="ENVIAR MENSAJE">
+				</div>
+	
+			</form>
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<address class="footer-section">
+				<h4>Dirección</h4>
+				<ul>
+					<li>DIRECCIÓN 4575</li>
+					<li>CABA</li>
+					<li>Argentina</li>
+				</ul>
+			</address>
+			<div class="footer-section">
+				<h4>Horario</h4>
+				<ul>
+					<li>Lunes - Viernes: 9am - 8pm</li>
+					<li>Sábado: 10am - 6pm</li>
+					<li>Domingo: Cerrado</li>
+				</ul>
+			</div>
+			<address class="footer-section">
+				<h4>Contacto</h4>
+				<ul>
+					<li>Teléfono: 1234-5678</li>
+					<li>Email: info@restaurante.com</li>
+					<nav class="redes">
+						<ul class="redes2--ul">
+							<a href="https://www.facebook.com" target="_blank"><div class="icono1 icono"></div></a>
+							<a href="https://www.instagram.com" target="_blank"><div class="icono2 icono"></div></a>
+						</ul>
+					</nav>
+				</ul>
+			</address>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2023 Restaurante. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+	integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+	crossorigin=""></script>		
+	<script src="script.js"></script>
+</body>
+</html>
